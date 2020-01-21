@@ -7,3 +7,4 @@ let tl = gsap.timeline()
      .from("p", {y:30, opacity: 0})
      .from("button", {y:30, opacity:0})
      .from("#items > g", {scale: 0, opacity: 0, transformOrigin: "50% 50%", stagger: 0.1})
+     // transformOrigin allows you to scale from the center anchor point vs the default of x:0, y:0
