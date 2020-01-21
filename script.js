@@ -3,12 +3,13 @@
 let tl = gsap.timeline({
    // you can add default values for every tween inside of this timeline 
    defaults: {
-      opacity: 0
+      opacity: 0,
+      ease: "back"
    }
 })
 
    // once you add those defaults you can then exclude that information from each tween unless you want to manually override it.
-   tl.from("#demo", {duration: 1})
+   tl.from("#demo", {duration: 1, ease: "linear"})
      .from("h1", {x:80})
      .from("h2", {x:-80}, "<") // Told this to come in at the same time as the previous tween
      .from("p", {y:30})
