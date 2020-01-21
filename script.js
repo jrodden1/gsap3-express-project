@@ -16,3 +16,7 @@ let tl = gsap.timeline({
      .from("button", {y:30})
      .from("#items > g", {scale: 0, transformOrigin: "50% 50%", stagger: 0.1})
      // transformOrigin allows you to scale from the center anchor point vs the default of x:0, y:0
+
+     
+//Uncomment the below line to use GSDevTools once you have a GSAP subscription
+//GSDevTools.create()
